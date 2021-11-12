@@ -1,0 +1,67 @@
+header, footer {
+    height: 5em;
+}
+header{
+    background-color: powderblue;
+}
+footer{
+    background-color: rebeccapurple;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.principal {
+    background-color: palevioletred;
+    flex-grow: 1;
+
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border-style: double ;
+    border-radius: 7,5px;
+    
+}
+.izquierda {
+    flex-grow: 1;
+    text-align: flex-start; 
+    background-color: red;
+    border-style: double ;
+    border-radius: 7,5px;
+    
+}
+.derecha {
+    flex-grow: 1;
+    text-align: flex-start; 
+    justify-content: space-around;
+    background-color:burlywood;
+    border-style: double ;
+    border-radius: 7,5px;
+}
+.centro {
+    flex-grow: 3;
+    background-color: chartreuse;
+    border-style: double ;
+    border-radius: 7,5px;
+    align-items: center;    
+}
+@media screen and (max-width: 750px) {
+    .principal {
+                    flex-direction: column;
+    }
+    .derecha {
+        background-color: crimson;
+    }
+    .izquierda {
+        background-color: cyan;
+    }
+    .centro {  
+        background-color: deeppink;
+    }
+}
